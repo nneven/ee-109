@@ -1,0 +1,33 @@
+			      EE 109  - Fall 2019
+			 Lab 4 - Using the LCD Display
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+1. (2 points) We want you to feel comfortable reading documentation to
+understand the operation of a device.  To that end, open the ATmega328/P
+datasheet linked on our website from the Tools and Links Page.  Go to section
+18.2 and read over pages 98-99. What effect does writing a 1 to a PIN register
+bit have?
+
+
+"Writing a '1' to PINxn toggles the value of PORTxn, independent on the value of DDRxn. The SBI instruction can be used to toggle one single bit in a port."
+
+
+Consider how this might be used to generate the E signal pulse in your
+lcd_writenibble() function.  In your text file for this answer,
+re-write the 3 or so lines of code you had to generate the E signal pulse for
+about 250ns using the feature of writing a 1 to a PIN register bit.
+Make sure you use the correct register, masking, etc.
+
+
+PINB |= (1 << 1);
+PORTB |= (1 << PB1);
+PORTB &= ~(1 << PB1);
+
+
+2. (1 point) Suppose we need to perform 3 concurrent tasks intermittently: Task
+A every 20 ms, Task B every 15 ms, and Task C every 40 ms. What delay should be
+used on each iteration of the main loop?
+ 
+There should be a 5ms delay used for each iteration of the main loop

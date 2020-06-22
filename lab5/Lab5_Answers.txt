@@ -1,0 +1,24 @@
+			      EE 109  - Fall 2019
+			      Lab 5 - Number Lock
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+1. (2 points) To ensure a date appears in the format: MM/DD, what snprintf()
+formatting string could be used to ensure dates like 6/9 are generated in a
+character buffer as 06/09.
+
+	char buf[17];
+	int m = 6; d = 9;
+	snprintf(buf, 17, /* you write the format string */, m, d);
+
+
+
+
+
+2. (1 point) Suppose you were interested in finding the bouncing
+period/duration of a button. Using an oscilloscope what triggering level and
+mode (Single vs. Run) would you use?
+
+
+

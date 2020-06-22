@@ -1,0 +1,49 @@
+			      EE 109  - Fall 2019
+			   Lab 8 - Digital Stopwatch
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+1. (2 points) Review the conceptual operation of a timer interrupt.
+
+  a. For a 16-bit timer with clock frequency of 16MHz (like the Arduino) and
+  prescalar of 64, how much time corresponds to a timer value of 2000?
+
+  16,000,000 / 64 = 250,000
+  2000 / 250,000 = 0.008 seconds
+
+  b. With a clock frequency of 16MHz and prescalar of 8, what is the longest
+  amount of time we can track with an 8-bit hardware timer.
+
+  The largest value you can hold in an 8-bit number is 255.
+  16,000,000 / 8 = 2,000,000
+  2,000,000 / 255 = .0001275 seconds
+
+2. (2 points) We want you to feel comfortable reading documentation to
+understand the operation of a device. To that end, open the ATmega328/P
+datasheet linked on our website from the Tools and Links Page. The Timer we
+have used also has the ability to make an output pin turn ON (set), OFF
+(clear), or Toggle when the timer reaches the OCR1A value (i.e. in addition to
+generating an interrupt, the hardware can automatically toggle or turn an
+output on or off). By searching the data sheet and using the information in
+section 20.14.1 (especially table 20-3) answer the following questions:
+
+  a. Which two pins can TIMER 1 (the 16-bit) timer control (i.e. what pins are
+  associated with OC1A and OC1B)?
+
+  The COM1A[1:0] and COM1B[1:0] control the Output Compare pins
+  (OC1A and OC1B respectively) behavior.
+
+  b. Describe what those pins would do when the timer reached the OCR1A value
+  if during initialization we used the statement TCCR1A |= 0x60; (Note: The PDF
+  register description of TCCR1A is a bit unclear: bit 7:6 corresponds to
+  COM1A1,COM1A0 and bit 5:4 corresponds to COM1B1,COM1B0).
+
+  If one or both of the COM1A[1:0] bits are written to one, the OC1A output
+  overrides the normal port functionality of the I/O pin it is connected to.
+  If one or both of the COM1B[1:0] are written to one, the OC1B output overrides
+  the normal port functionality of the I/O pin it is connected to. The DDR bit
+  corresponding to the OC1A or OC1B pin must be set in order to enable to output driver.
+  When the OC1A or OC1B is connected to the pin, the function of the COM1x[1:0]
+  bits is dependent of the WGM1[3:0] bits setting.
+

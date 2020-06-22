@@ -1,0 +1,16 @@
+			      EE 109  - Fall 2019
+		    Lab 7 - Rotary Encoders and Interrupts
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+
+1. (1 point) Briefly explain why it is undesirable to read the two encoder
+input signals with two separate PINC statements.
+
+Because the value of PINC can change when you read the two encoder unput signals with two seperate PINC statements. This leads to innacurate values being assigned into our a and b state variables. To prevent this we must assign PINC to a temp variable and then read the input signals with a single statement .
+
+2. (1 point) Briefly explain why updating the LCD display in your ISR could
+lead to undesirable behavior for this lab.
+
+Because updating the LCD takes a lot longer to do then just check the value of a few bits, it would greatly increase the execution of the interrupt function. The arduino will not switch to a different interrupt if it is still in the middle of executing a different one, so it is desirable to to keep the ISR function and short as possible. Keeping it in the main function prevents other interrupts from being missed because the execution time is very short in my ISR.

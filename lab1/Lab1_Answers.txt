@@ -1,0 +1,74 @@
+			      EE 109  - Fall 2019
+			  Lab 1 - Electronic Circuits
+
+Edit the document below to fill your answers from the exercises done in lab.
+Be sure to include the proper units, such as "1 kOhm", or "200 mV"
+
+1. What voltage was the power supply set for, and what voltage did the
+   DMM measure?
+        Power supply =  2.58 volts
+        DMM =  2.579 volts
+
+
+2. What are the values of the resistors?  List the values from smallest to
+   largest.
+   From the color bands:
+		R1 =  260 ohms
+		R2 =  560 ohms
+		R3 =  1000 ohms
+         
+   The measured values:
+        R1 =  264 ohms
+        R2 =  553 ohms
+        R3 =  988 ohms
+
+
+3. In the circuit with Vs=5V and resistors R1 and R2 in series what are the
+   calculated voltages across them?
+        V1 =  1.59 volts
+        V2 =  3.41 volts
+
+
+4. In the circuit with Vs=5V and resistors R1 and R2 in series what are the
+   measured voltages across them?
+        V1 =  1.61 volts
+        V2 =  3.38 volts
+
+
+5. What are the voltages (or range of voltages) on the switch output when it
+   is not pressed and when it is pressed?
+        Not pressed =  -1 to 1 volts
+        Pressed =  0 volts
+
+
+6. With resistor R2 added to the circuit, what are the voltages on the switch
+   output when it is not pressed and when it is pressed?
+        Not pressed =  4.99 volts
+        Pressed =  0.4 volts
+
+
+7. Assuming Vs = 4.0V and a Vled of 2.0V, calculate the current flowing through
+   the LED for both resistors.  Use the values that you measured for R1 and R3.
+                Resistance     Current
+        R1:      264 ohms	  0.0076 amps
+        R3:      988 ohms	  0.002 amps
+
+
+8. Fill in the table below with the input voltages to the 74LS04 inverter
+   and the resulting output voltage,
+
+   Input voltage        Output voltage
+        0.0                 4.426
+        0.2                 4.426
+        0.4                 4.426
+        0.6                 4.420
+        0.8                 4.327
+        1.0                 2.879
+        1.2                 0.14
+        1.4                 0.14
+        1.6                 0.14
+        1.8                 0.14
+        2.0                 0.14
+        3.0                 0.14
+        4.0                 0.14
+        5.0                 0.14

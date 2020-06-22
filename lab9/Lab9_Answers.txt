@@ -1,0 +1,23 @@
+			      EE 109  - Fall 2019
+			 Lab 9 - Serial Communications
+
+Edit the document below to fill in your answers to the review problems at the
+end of the assignment web page.
+
+
+1. (1 points) Briefly explain why a common GND signal is needed between
+transmitter and receiver devices.
+
+Voltage levels with respect to ground represent the RS 232 signals. There is a wire 
+for each signal, together with the ground signal (reference for voltage levels). Due 
+to the way the signals are connected, a common ground is required.
+
+2. (2 points) The baud rate (e.g. 9600 bps) is the rate at which 1's and 0's
+are transmitted over the serial line.  Briefly explain why the data rate (rate
+at which useful data is transmitted/received) is less than the baud rate even
+with error-free transmission.
+
+It is impossible for the data rate to be higher than the baud rate because the baud 
+rate is the maximum flow of 1's and 0's that are transmitted over the serial line. The 
+data rate is lower to ensure that every bit of useful data can be represented and 
+transferred properly given the baud rate 

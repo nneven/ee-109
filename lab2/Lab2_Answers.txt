@@ -1,0 +1,80 @@
+			      EE 109  - Fall 2019
+			     Lab 2 - Digital Logic
+
+Edit the document below to fill your answers from the exercises done in lab.
+Be sure to include the proper units, such as "1 kHz", or "200 msec"
+
+1. (5 points) Fill out the following table for outputs A0 and A1. The duty
+cycle of a signal is the ratio (expressed as a percentage) of the time the
+signal is in the high state to the period of the signal.
+
+    Bit  Time in 0 state   Time in 1 state    Period    Frequency    Duty cycle
+
+    A0          ?                 ?             ?           ?            ?
+
+    A1          ?                 ?             ?           ?            ?
+
+
+
+2. (2 points) What is the range of the width of the A2 pulse that you observed?
+
+    Narrowest:     ?
+
+    Widest:        ?
+
+
+3: (2 points) Fill in the truth table for the circuit.
+
+	A    B    |   Z
+      ------------+------
+        0    0    |   ?
+        0    1    |   ?
+        1    0    |   ?
+        1    1    |   ?
+
+
+
+4. (1 points) The circuit performs the same function as a ? gate.
+
+
+
+5. (2 points) What is the approximate time delay from the input to the output
+of the NOT gate?
+
+
+			  ---- Review Questions ----
+
+1. (1.5 points) Suppose you wanted to measure the frequency of a note played by
+a piano and sensed from a microphone connected/viewed on an oscilloscope.
+Answer the following True/False questions with a brief explanation.
+
+     a. True/False: To measure the frequency, the vertical scale of the oscilloscope
+     would be of more use than the horizontal scale.
+
+
+     b. True/False: Since the note is played for a short time period, we should set the
+     triggering to "Single" rather than "Run".
+
+
+     c. True/False: If the signal ranges between 0V and 2.5V, the trigger level should
+     ideally be set around 1.25V.
+
+
+2. (1.5 points) Given the digital circuit you built, suppose as you test it the
+output LED is always OFF regardless of the button positions. For each of the
+following possible explanations, write a sentence that explains why that issue
+would cause the LED to always be off.
+
+     a. VDD was not connected to the IC chips.
+
+
+
+     b. The pull-up resistors for the buttons were not connected appropriately.
+
+
+
+     c. The LED was plugged in backwards.
+
+
+
+
